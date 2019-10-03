@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Titel der Website</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+		<script>
+			minToHours(200);
+			
+			function minToHours(min) {
+				var hours = min/60;
+				var hoursInt = parseInt(hours);
+				
+				var mins = min-(hoursInt*60);
+				
+				document.write(min+" minutes = "+hoursInt+" hour(s) and "+mins+" minute(s).");
+			}
+			
+		</script>
+	</body>
+</html>
