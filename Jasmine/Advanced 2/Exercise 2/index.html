@@ -12,10 +12,33 @@
 			yesterday("23 Feb 2019");
 			
 			function yesterday(date) {
-				newDate = date.split(" ");
+				var d = new Date(date);
 				
+				var day = d.getDate();
+				var month = d.getMonth() +1;
+				var year = d.getFullYear();
 				
-			
+				var wd = day.getDay;
+				dayNum = jetzt.getDay(wd);
+				weekday = ['SON','MOn','THU','WEN','THI','FRI','SAT' ];
+				
+				var newDate = weekday[dayNum]+" "+month+" "+day+ " "+year;
+				document.write(newDate);	
+
+
+
+				/*Original
+				var jetzt = new Date(),
+						tag = jetzt.getDate(),
+						tagZahl = jetzt.getDay(),
+						wochentag = ['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag' ],
+						monatZahl = jetzt.getMonth(),
+					monat = ['Januar','Februar','März','April','Mai','Juni','Juli','August','September',    
+								'Oktober','November','Dezember'],
+					text;
+					text = 'Heute ist ' + wochentag[tagZahl]	+ ', der ' + tag + '. ' + monat[monatZahl] + '.';
+					document.getElementById('datumsausgabe').innerHTML = text;					
+			*/
 			}
 		
 		</script>
