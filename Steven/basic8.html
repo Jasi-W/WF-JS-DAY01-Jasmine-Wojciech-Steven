@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Degree - Radian Conversion</title>
+</head>
+<body>
+
+<script>
+	function degree2Rad(){
+		degrees_str = prompt("Enter the degrees.")
+		degrees = parseFloat(degrees_str)
+		rad = degrees * (Math.PI/180)
+
+
+		document.write(degrees + " degrees convert to " + rad + " radians.")
+	}
+
+	degree2Rad();
+</script>
+</body>
+</html>

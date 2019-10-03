@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Age Calculator</title>
+</head>
+<body>
+
+<script>
+	function ageCalc() {
+		var birth_year = prompt("What is your birth year?")
+		var birthYear = parseFloat(birth_year)
+		var y = new Date();
+		var currentYear = y.getFullYear();
+		var dif = currentYear - birthYear
+		var dif2 = dif - 1
+
+		console.log(dif)
+		document.write("You are either " + dif + " or " + dif2 + " years old.")
+
+
+	}
+
+ageCalc();
+</script>
+</body>
+</html>
