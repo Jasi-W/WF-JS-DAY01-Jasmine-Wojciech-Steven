@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yesterday's date</title>
+</head>
+<body>
+<script>
+var yesterday = (function(){
+var d = new Date();
+d.setDate(d.getDate() - 1);
+document.write(d)
+}());
+</script>
+</body>
+</html>

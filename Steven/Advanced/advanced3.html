@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Time Convert</title>
+</head>
+<body>
+<script>
+	function timeConvert() {
+		input = prompt("Enter the amount of minutes you want converted into hours and minutes.");
+		inputnr = parseFloat(input);
+		hour = 0
+		min = 0
+
+		while(inputnr >= 60){
+			inputnr -= 60;
+			hour++;
+		}
+
+		while(inputnr >= 1){
+			inputnr -= 1;
+			min++
+		}
+
+		document.write(input + " minutes equal " + hour + " hours and " + min + " minutes.")
+	}
+
+	timeConvert();
+</script>
+</body>
+</html>

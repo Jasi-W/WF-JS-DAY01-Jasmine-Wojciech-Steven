@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ATM</title>
+</head>
+<body>
+<script>
+	function functionATM() {
+		ten = 100
+		twent = 75
+		fift = 40
+		hund = 20
+		tenex = 0
+		twentex = 0
+		fiftex = 0
+		hundex = 0
+		req = prompt("Enter the amount of money you want to withdraw.");
+		reqnr = parseFloat(req);
+
+		while(reqnr >= 100 && hund > 0) {
+			reqnr -= 100;
+			hund--;
+			hundex++;
+		}
+		while(reqnr >= 50 && fift > 0) {
+			reqnr -= 50;
+			fift--;
+			fiftex++;
+		}
+		while(reqnr >= 20 && twent > 0) {
+			reqnr -= 20;
+			twent--;
+			twentex++;
+		}
+		while(reqnr >= 10 && ten > 0) {
+			reqnr -= 10;
+			ten--;
+			tenex++;
+		}
+
+		if(ten < 20 || twent < 10 || fift < 5 || hund < 2){
+			console.log("requestMoney();")
+		}
+
+		document.write("You requested " + req + " €. You receive " + hundex + " 100€ bills, " + fiftex + " 50€ bills, " + twentex + " 20€ bills and " + tenex + " 10€ bills.")
+
+
+
+	}
+
+	functionATM();
+</script>
+</body>
+</html>

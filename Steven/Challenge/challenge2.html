@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script>
+    var mystring = 'Properties,$a$set$of$immutable$values,$are$passed$to$a$components$renderer$as$properties$in$its $HTML$tag.$A$component$cannot$directly$modify$any$properties$passed$to$it,$but$can$be$passed$ callback$functions$that$do$modify$values.$This$mechanisms$promise$is$expressed$as$"properties $flow$down;$actions$flow$up".';
+    mystring = mystring.split('.$').join('.<br>')
+    mystring = mystring.split('$').join(' ')
+    document.write(mystring)
+    </script>
+</body>
+
+</html>
