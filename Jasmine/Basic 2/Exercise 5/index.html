@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Titel der Website</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+		<script>
+			
+			var boxCalc = calculateBox(5, 6, 8);
+
+			function calculateBox(width, height, depth) {
+				var area = width*height;
+				var volume = width*height*depth;
+				
+				boxSizing = [area, volume];
+			
+				return boxSizing;
+			}
+			
+			document.write("The area of the box is: "+boxSizing[0]);
+			document.write("<br>The volume of the box is: "+boxSizing[1]);
+
+		</script>
+	</body>
+</html>
+
