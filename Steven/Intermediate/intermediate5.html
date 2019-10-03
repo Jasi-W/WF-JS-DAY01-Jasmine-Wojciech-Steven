@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Average Grade</title>
+</head>
+<body>
+<script>
+	function averageGrade() {
+		m = prompt("What is your grade in Math?")
+		m0 = parseFloat(m)
+		p = prompt("What is your grade in Physics?")
+		p0 = parseFloat(p)
+		e = prompt("What is your grade in English?")
+		e0 = parseFloat(e)
+		sum = m0 + p0 + e0
+		ave = sum / 3
+		truave = Math.round(ave)
+		document.write("Sum: " + sum + "<br>")
+		document.write("Average: " + truave)
+	}
+	averageGrade();
+</script>
+</body>
+</html>
