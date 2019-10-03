@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang=en’>
+
+	<head>
+		<title>Titel der Website</title>
+		<meta name="author" content="Jasmine">
+		<meta name="describtion" content="kurze Beschreibung!">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+		<script>
+			var degrees = window.prompt("Please enter the degrees: ");
+			
+			degreeToRadians(degrees);
+			
+			function degreeToRadians(degrees) {
+				var radians =  degrees*Math.PI/180;
+				document.write(degrees+" degress are "+radians+" radians");
+			}
+		</script>
+	</body>
+</html>

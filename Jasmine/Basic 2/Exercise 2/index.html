@@ -26,11 +26,10 @@
 		</footer>
 		
 		<script>
+			crystalGazer(1974, 2019);
 			
-			crystalGazer(3, "Maria", "Vienna", "CEO");
-			
-			function crystalGazer(number_children, partners_name, location, job_title) {
-				document.write("You will be a "+job_title+" in "+location+" and married to "+partners_name+" with "+number_children+" children.");
+			function crystalGazer(birth_year, current_year) {
+				document.write("You are either "+((current_year - birth_year)-1)+" or "+(current_year - birth_year));
 			}
 	
 		</script>
