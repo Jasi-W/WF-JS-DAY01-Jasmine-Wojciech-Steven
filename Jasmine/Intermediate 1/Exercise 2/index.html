@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Titel der Website</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+		<script>
+			var fruits = ["apple", "banana", "kiwi"];
+			var animals = ["monkey", "horse", "dog"];
+			
+			changeFruits(fruits);
+			changeAnimals(animals);
+			
+			function changeFruits(fruits) {
+				fruits.push("orange");
+				document.write(fruits);
+				document.write("<br>");
+				
+				fruits.pop();
+				document.write(fruits);
+				document.write("<br>");
+				document.write("<br>");
+			}
+			
+			function changeAnimals(animals) {
+				document.write(animals.sort());
+				document.write("<br>");
+				
+				animals.push("cat");
+				document.write(animals.sort());
+			}
+		</script>
+	</body>
+</html>
+
